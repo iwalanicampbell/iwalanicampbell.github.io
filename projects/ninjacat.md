@@ -20,4 +20,4 @@ The game is not fully finished yet but I hope to finish it by the time I graduat
 
 
 
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+
