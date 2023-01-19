@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/spr_player.png
+image: img/ninjacat/spr_player.png
 title: "Ninja Cat"
 date: 2016
 published: true
@@ -11,7 +11,7 @@ labels:
 summary: "A 2D platformer game I started making while I was in highschool"
 ---
 
-<img class="img-fluid" src="../img/spr_player.png">
+<img class="img-fluid" src="../img/ninjacat/ninjacat_banner">
 
 Ninja cat has you playing as a cat ninja while weaving through enemies like shiba-samurai or other obstacles.
 
