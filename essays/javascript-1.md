@@ -8,7 +8,7 @@ published: true
 labels:
   - ICS314
   - Learning
-  - Javascri[t
+  - Javascript
 ---
 
 <img width="200px" class="rounded float-start pe-4" src="../img/javascript.png">
