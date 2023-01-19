@@ -11,7 +11,7 @@ labels:
 summary: "A 2D platformer game I started making while I was in highschool"
 ---
 
-<img class="img-fluid" src="../img/ninjacat/ninjacat_banner">
+<img class="img-fluid" src="../img/ninjacat/ninjacat-banner.png">
 
 Ninja cat has you playing as a cat ninja while weaving through enemies like shiba-samurai or other obstacles.
 
