@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Iwalani Campbell",
-    "label": "Student",
+    "label": "Computer Science Undergraduate Student",
     "picture": "https://github.com/iwalanicampbell.png",
     "email": "iwalaniy@hawaii.edu",
     "phone": "",
@@ -10,7 +10,7 @@
     "location": { "address": "", "postalCode": "96819", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
-      { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalanicampbell" },
+      { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalani-campbell" },
       { "network": "twitter", "username": "", "url": "http://twitter.com/changeme" },
       { "network": "instagram", "username": "", "url": "http://instagram.com/changeme" }
     ]
