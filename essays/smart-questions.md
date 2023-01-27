@@ -38,7 +38,7 @@ I'd assume this is C, since it works in GCC as well. Where is this defined in th
   *There's no such thing as a stupid question*
 ## Example Question Not As Smart Way
   
-  You might have heard that quote a lot, I agree with it there are no inherently dumb questions, but questions can be vague, or none descriptive like this one for example: [Example](https://stackoverflow.com/questions/26564442/code-not-working-on-machine) Looking at the rest of the description and example code provided its very hard to tell what is supposed to happen.  The code itself is only 4 lines and not in the full context of the rest of the code.  There has only been one response to the query and the response itself was not descriptive either.  The post also has some grammatical and punctuation errors.  By giving a vague question the people who can help you might not be able to solve the problem since they don't know what is fully going on. 
+  You might have heard that quote a lot, I agree with it there are no inherently dumb questions, but questions can be vague, or none descriptive like this one for example: [Example 2](https://stackoverflow.com/questions/26564442/code-not-working-on-machine) Looking at the rest of the description and example code provided its very hard to tell what is supposed to happen.  The code itself is only 4 lines and not in the full context of the rest of the code.  There has only been one response to the query and the response itself was not descriptive either.  The post also has some grammatical and punctuation errors.  By giving a vague question the people who can help you might not be able to solve the problem since they don't know what is fully going on. 
   
 ```
 Q:code not working on machine
