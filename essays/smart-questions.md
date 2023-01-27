@@ -15,7 +15,8 @@ labels:
 ## Example Question Smart Way
 ```
 Q: What is the "-->" operator in C++?
-After reading Hidden Features and Dark Corners of C++/STL on comp.lang.c++.moderated, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.
+After reading Hidden Features and Dark Corners of C++/STL on comp.lang.c++.moderated, I was completely surprised that the following snippet compiled and worked 
+in both Visual Studio 2008 and G++ 4.4.
 
 Here's the code:
 #include <stdio.h>
@@ -53,7 +54,9 @@ at the very start of that code its telling me UIImage does not conform to protoc
 imageView.animationRepeatCount = 1.0
 and that is giving me type int does not conform to protocol FloatLiteralConvertible.
 
-i have run this same project folder on my girlfriends machine and it runs 100% fine, i have tried reinstalling Xcode and even reformatted my computer and a fresh install of mavericks and Xcode, nothing is working, i was hoping someone has had simmalir issues and can point me in the direction of fixing this short of buying a new machine
+i have run this same project folder on my girlfriends machine and it runs 100% fine, i have tried reinstalling Xcode and even reformatted my computer and a 
+fresh install of mavericks and Xcode, nothing is working, i was hoping someone has had simmalir issues and can point me in the direction of fixing this short of 
+buying a new machine
 ```
   
  
