@@ -33,7 +33,7 @@ Output:
 9 8 7 6 5 4 3 2 1 0
 I'd assume this is C, since it works in GCC as well. Where is this defined in the standard, and where has it come from?
 ```
-  All though this question might seem simple, this question is smart way to ask for help[Example 1](https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c).  The inquirer asks the question using the type of coding language they want to code for.  They also give the full input code and output code.  The inqurier  received ten plus possible answers, and they were successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of rudeness and hostility of forum members or hackers. 
+  All though this question might seem simple, this question is smart way to ask for help [Example 1](https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c).  The inquirer asks the question using the type of coding language they want to code for.  They also give the full input code and output code.  The inqurier  received ten plus possible answers, and they were successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of rudeness and hostility of forum members or hackers. 
   
   *There's no such thing as a stupid question*
 ## Example Question Not As Smart Way
