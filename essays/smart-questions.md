@@ -58,5 +58,8 @@ i have run this same project folder on my girlfriends machine and it runs 100% f
 fresh install of mavericks and Xcode, nothing is working, i was hoping someone has had simmalir issues and can point me in the direction of fixing this short of 
 buying a new machine
 ```
+
+## Takeaways
+  When encountering code you are bound to reach a problem you might not be able to solve alone.  Turning to community forums is a great help in finding a solution.  But if you give a not so smart question you might not encounter the solution you were waiting for.  Coding is very detailed and intricate therefore questions about code should have just as much detail in order to get good and smart responses.  It's also important to know what and how the person got their answer since some solutions might be nefarious; it is crucial to not just copy paste the possible answer and hope it works.  
   
  
