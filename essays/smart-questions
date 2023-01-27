@@ -1,0 +1,25 @@
+---
+layout: essay
+type: essay
+title: "There Are No Dumb Questions But There Are Smart Questions"
+# All dates must be YYYY-MM-DD format!
+date: 2023-01-26
+published: true
+labels:
+  - ICS314
+  - Learning
+---
+
+<img width="200px" class="rounded float-start pe-4" src="../img/smart-questions/questions.png">
+  
+## Example Question Smart Way
+  All though this question might seem simple, this question is smart way to ask for help[Example 1](https://stackoverflow.com/questions/3481828/how-do-i-split-a-string-in-java).  The inquirer asks the question using the type of coding language they want to code for.  
+  
+  *There's no such thing as a stupid question*
+## Example Question Not As Smart Way
+  
+  You might have heard that quote a lot, I agree with it there are no inherently dumb questions, but questions can be vague, or none descriptive like this one for example: [Example](https://stackoverflow.com/questions/26564442/code-not-working-on-machine) Looking at the rest of the description and example code provided its very hard to tell what is supposed to happen.  The code itself is only 4 lines and not in the full context of the rest of the code.  There has only been one response to the query and the response itself was not descriptive either.  The post also has some grammatical and punctuation errors.  By giving a vague question the people who can help you might not be able to solve the problem since they don't know what is fully going on. 
+  
+
+  
+ 
