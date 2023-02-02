@@ -1,0 +1,17 @@
+---
+layout: essay
+type: essay
+title: "I didn't plan this far"
+# All dates must be YYYY-MM-DD format!
+date: 2023-02-01
+published: true
+labels:
+  - ICS314
+  - Learning
+---
+
+<img width="200px" class="rounded float-start pe-4" src="../img/javascript.png">
+  
+## Where to begin?
+  
+  After a meager four weeks of learning software engineering, I am not too sure where to start and what options are available for software engineering.  However, I do know that I enjoy 
