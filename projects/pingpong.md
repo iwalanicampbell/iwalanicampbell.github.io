@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/brick_killer.png
 title: "Simple Brick Breaker Game"
-date: 2023
+date: 2022
 published: True
 labels:
   - Github
