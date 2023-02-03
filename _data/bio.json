@@ -11,8 +11,8 @@
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
       { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalani-campbell" },
-      { "network": "twitter", "username": "", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "", "url": "http://instagram.com/changeme" }
+      { "network": "twitter", "username": "", "url": "" },
+      { "network": "instagram", "username": "", "url": "" }
     ]
   },
   "interests": [
@@ -20,7 +20,7 @@
     { "name": "Video Game Design" },
     { "name": "Software Engineering" },
     { "name": "Neural Networks" },
-    { "name": "CTF" }
+    { "name": "Capture The Flag" }
   ],
   "skills": [
     {
@@ -62,9 +62,11 @@
       "website": "",
       "startDate": "2021-06-01",
       "endDate": "Present",
-      "summary": "",
+      "summary": "Published updated versions of Jupyter Notebooks that improve querying, retrieving, parsing, and presentation of sensitive data for analysts.",
       "highlights": [
-        ""
+        "Prepared and delivered briefings to senior executives".
+        "Improved existing software for multiple projects by integrating both programming language and Chinese language skills to programmatically identify keywords for analysts",
+        "Software aimed to parse, identify, flag, and present data in a more suitable form for non-Chinese linguists"
       ]
     }
   ],
