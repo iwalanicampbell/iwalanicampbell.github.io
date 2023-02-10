@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: ""} expected" on new line"
+title: "'} expected' on new line"
 # All dates must be YYYY-MM-DD format!
-date: 2023-02-9
+date: 2023-02-09
 published: true
 labels:
   - ICS314
