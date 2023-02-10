@@ -11,7 +11,7 @@ labels:
   - Javascript
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/codingstandard.png">
+<img width="600px" class="rounded float-start pe-4" src="../img/codingstandard.png">
   
 ## Computer standards vs Human standards
   
