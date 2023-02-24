@@ -16,7 +16,7 @@ labels:
   
 ## HTML and CSS
   
-  In the beginning we primarily used HTML and CSS to create our webpages, frankly using CSS and HTML the webpages looked less than ideal.  Customization was hard and having simple centering was harder.  I think raw HTML and CSS are hard to use on its own because you limit yourself to other premade modules.  HTML and CSS is like the first stone wheel, it works but in certain cases might want to use tools like Bootstrap to customize the wheel for different scenarios.  Everyone shares the road and we have different wheels but at the end of the day we still want the wheels to work the same and obey the laws of the road. 
+  In the beginning we primarily used HTML and CSS to create our webpages, frankly using CSS and HTML the webpages looked less than ideal.  Customization was hard and having simple centering was harder.  I think raw HTML and CSS are hard to use on its own because you limit yourself to other premade modules.  HTML and CSS is like the foundation of a house, it works at the ground level but if I use tools like Bootstrap to customize the walls, roofs, decor, etc for different houses.  Everyone shares the has to have the same foundation but we all have different needs for our houses, and having standard tools is like making sure the houses are in regulation so that if other developers need to work on the house later they can do so without much headache. 
   
  
 <img width="600px" class="rounded float-start pe-4" src="../img/newdiscord.png">
@@ -29,5 +29,4 @@ labels:
   
 ## Investment and Benefits
   
-  When you invest time and frustration into learning HTML and CSS you gain a pretty neat webpage.  The more blood, sweat and tears you put the more aesthetically pleasing your webpage looks.  Take for example the two screenshots of the webpages I built, the first one is made of raw HTML, CSS and 40 minutes.  The second one was made with BootStrap and a few hours.  The difference is day and night.  Through this module I felt a sense of accomplishment seeing my finished webpages, which gave me a nice amount of serotonin to forget about the actual development process.  
-  
+  When you invest time and frustration into learning HTML and CSS you gain a pretty neat webpage.  The more blood, sweat and tears you put the more aesthetically pleasing your webpage looks.  Take for example the two screenshots of the webpages I built, the first one is made of raw HTML, CSS and 40 minutes.  The second one was made with BootStrap and a few hours.  The difference is day and night.  Through this module I felt a sense of accomplishment seeing my finished webpages, which gave me a nice amount of serotonin to forget about the actual development process.  It is beneficial to learn HTML and CSS as a developer since all websites run on it, even if you never touch HTML it is good to understand it.
