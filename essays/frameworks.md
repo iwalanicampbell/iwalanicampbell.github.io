@@ -12,14 +12,17 @@ labels:
   - HTML
   - Bootstrap
 ---
+<div class="text-center p-4">
 <img width="600px" class="rounded float-start pe-4" src="../img/surfing.png">
+</div>
   
 ## HTML and CSS
   
   In the beginning we primarily used HTML and CSS to create our webpages, frankly using CSS and HTML the webpages looked less than ideal.  Customization was hard and having simple centering was harder.  I think raw HTML and CSS are hard to use on its own because you limit yourself to other premade modules.  HTML and CSS is like the foundation of a house, it works at the ground level but if I use tools like Bootstrap to customize the walls, roofs, decor, etc for different houses.  Everyone shares the has to have the same foundation but we all have different needs for our houses, and having standard tools is like making sure the houses are in regulation so that if other developers need to work on the house later they can do so without much headache. 
   
- 
+<div class="text-center p-4">
 <img width="600px" class="rounded float-start pe-4" src="../img/newdiscord.png">
+</div>
 
 ## BootStrap
   
