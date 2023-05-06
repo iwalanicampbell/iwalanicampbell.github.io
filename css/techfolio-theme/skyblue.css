@@ -42,3 +42,8 @@ a {
   border-style: solid;
   border-width: 2px;
 }
+
+.navbar {
+  color: var(---tfblue4)
+  
+}
