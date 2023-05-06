@@ -10,9 +10,7 @@
     "location": { "address": "", "postalCode": "96819", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
-      { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalani-campbell" },
-      { "network": "twitter", "username": "", "url": "" },
-      { "network": "instagram", "username": "", "url": "" }
+      { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalani-campbell" }
     ]
   },
   "interests": [
