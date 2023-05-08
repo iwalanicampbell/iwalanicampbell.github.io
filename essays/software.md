@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Hey Siri what does a software engineer do?"
+title: What does a software engineer do to make so much money?
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-01
 published: true
@@ -12,7 +12,6 @@ labels:
 
 <img width="200px" class="rounded float-start pe-4" src="../img/software_engineer.png">
   
-  *Hey Siri what does a software engineer do?*
 ## Specifics paths of software engineer
   What even is a software engineer? I've heard the phrase software engineer thrown about but I've never thought to much about what they do.  They engineer software. right? But what makes them different from programmer, and a developer? Software engineers determine the best ways to develop and support their projects and processes; and compared to the others, software engineers are more likely to work on computer systems as a whole.  As a software engineer you may work on backend or frontend programming.
   
