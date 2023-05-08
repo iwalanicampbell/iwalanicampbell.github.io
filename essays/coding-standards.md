@@ -4,7 +4,7 @@ type: essay
 title: "'} expected' on new line"
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-09
-published: true
+published: false
 labels:
   - ICS314
   - Learning
