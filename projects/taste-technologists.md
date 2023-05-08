@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/FaS-dark.png
 title: "Taste Technologists ICS314 Group Project"
-date: 2023
+date: 2023-05-06
 published: True
 labels:
   - Github
