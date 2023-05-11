@@ -4,7 +4,7 @@ type: project
 image: img/windows.png
 title: "Windows Hardening Template"
 date: 2023
-published: True
+published: False
 labels:
   - Windows
   - Cybersecuirty
