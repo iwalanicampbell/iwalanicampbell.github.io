@@ -4,7 +4,7 @@ type: essay
 title: What does a software engineer do to make so much money?
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-01
-published: true
+published: false
 labels:
   - ICS314
   - Learning
