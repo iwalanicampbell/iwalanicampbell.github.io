@@ -61,10 +61,10 @@ body.dark-mode .navbar {
 
 /* Override color palette for dark mode */
 body.dark-mode {
-  --tf-blue1: #333333; /* Darkest gray */
-  --tf-blue2: #555555; /* Darker gray */
-  --tf-blue3: #777777; /* Dark gray */
-  --tf-blue4: #999999; /* Medium dark gray */
+  --tf-blue1: #222222; /* Darkest gray */
+  --tf-blue2: #333333; /* Darker gray */
+  --tf-blue3: #555555; /* Dark gray */
+  --tf-blue4: #777777; /* Medium dark gray */
   --bs-font-sans-serif: "Open Sans", sans-serif;
   --bs-link-color: var(--tf-blue1);
   --tf-pill-bg: var(--tf-blue3);
