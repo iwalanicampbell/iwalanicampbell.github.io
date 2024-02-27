@@ -25,7 +25,7 @@
         // Change the button content based on dark mode state
         const isDarkMode = body.classList.contains('dark-mode');
         if (isDarkMode) {
-            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill style="fill: white;"></i>';
         } else {
             darkModeToggle.textContent = 'Dark Mode';
         }
@@ -40,6 +40,6 @@
     if (isDarkMode) {
         body.classList.add('dark-mode');
         header.classList.add('dark-mode');
-        darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        darkModeToggle.innerHTML = '<i class="bi bi-moon-fill style="fill: white;"></i>';
     }
 </script>
