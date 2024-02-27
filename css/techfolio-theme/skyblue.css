@@ -86,6 +86,15 @@ body.dark-mode {
   color: #ffffff; /* Dark mode text color for brand and links */
 }
 
+/* Styles for headings in dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5 {
+  color: #ffffff; /* White text color in dark mode */
+}
+
 /* Rainbow RGB name */
 #name {
     font-size: 72px;
