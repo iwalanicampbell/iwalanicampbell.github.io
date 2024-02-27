@@ -1,6 +1,6 @@
 /* Import light mode styles by default */
 @import "skyblue.css";
-@import "dark.css";
+
 /* Add a class to the body to toggle between light and dark mode */
 body.dark-mode {
   /* Apply dark mode styles when the dark-mode class is present */
