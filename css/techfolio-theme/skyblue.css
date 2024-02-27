@@ -97,6 +97,10 @@ body.dark-mode {
   font-family: "Ubuntu Mono", sans-serif; /* Specify the font family */
 }
 
+.dark-mode .card {
+    background-color: #212529; /* Dark background color for cards in dark mode */
+}
+
 /* Rainbow RGB name */
 #name {
     font-size: 72px;
