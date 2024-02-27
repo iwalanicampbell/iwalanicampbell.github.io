@@ -9,6 +9,7 @@ labels:
   - ICS314
   - Learning
 ---
+<img width="200px" class="rounded float-start pe-4" src="../img/software_engineer.png">
   
   Over the past semester, I learned a variety of software engineering concepts, but most importantly I experienced them. After ICS314 I have acquired experience with web application development, with both soft skills and hard skills. The key takeaways from ICS314 for me were learning, Agile Project Management, Design Patterns, and Coding Standards.  
     
