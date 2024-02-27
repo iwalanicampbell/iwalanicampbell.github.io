@@ -3,6 +3,7 @@
 /* Use Open Sans as the default font. */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap')
 
 /* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
 :root {
@@ -65,7 +66,7 @@ body.dark-mode {
   --tf-blue2: #076db3; /* Darker gray */
   --tf-blue3: #555555; /* Dark gray */
   --tf-blue4: #777777; /* Medium dark gray */
-  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-font-sans-serif: "Ubuntu Mono", sans-serif; /* NOT REALLY SANS SERIF*/
   --bs-link-color: var(--tf-blue2);
   --tf-pill-bg: var(--tf-blue2);
   --tf-icon-fill: var(--bs-white);
@@ -77,13 +78,13 @@ body.dark-mode {
 /* Styles for the header in dark mode */
 .dark-mode #header {
   background-color: #333333; /* Dark mode background color */
-  color: #000000; /* Dark mode text color */
+  color: #aa80ff; /* Dark mode text color */
 }
 
 /* Customize other styles as needed */
 .dark-mode #header .navbar-brand,
 .dark-mode #header .nav-link {
-  color: #000000; /* Dark mode text color for brand and links */
+  color: #aa80ff; /* Dark mode text color for brand and links */
 }
 
 /* Styles for headings in dark mode */
@@ -92,7 +93,8 @@ body.dark-mode {
 .dark-mode h3,
 .dark-mode h4,
 .dark-mode h5 {
-  color: #ffffff; /* White text color in dark mode */
+  color: #80ff80; /* Green text color in dark mode */
+  font-family: "Ubuntu Mono", sans-serif; /* Specify the font family */
 }
 
 /* Rainbow RGB name */
