@@ -120,6 +120,11 @@ body.dark-mode {
     border-color: #ffffff; /* Border color for buttons on hover in dark mode */
 }
 
+/* Styles for icons in dark mode */
+.dark-mode .social-icon {
+  fill: #ffffff; /* White color for social icons in dark mode */
+}
+
 
 /* Rainbow RGB name */
 #name {
