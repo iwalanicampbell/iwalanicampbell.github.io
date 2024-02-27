@@ -77,13 +77,13 @@ body.dark-mode {
 /* Styles for the header in dark mode */
 .dark-mode #header {
   background-color: #333333; /* Dark mode background color */
-  color: #ffffff; /* Dark mode text color */
+  color: #000000; /* Dark mode text color */
 }
 
 /* Customize other styles as needed */
 .dark-mode #header .navbar-brand,
 .dark-mode #header .nav-link {
-  color: #ffffff; /* Dark mode text color for brand and links */
+  color: #000000; /* Dark mode text color for brand and links */
 }
 
 /* Styles for headings in dark mode */
