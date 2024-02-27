@@ -27,6 +27,7 @@
 
     // Check for user preference
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    console.log('Is dark mode:', isDarkMode);
     if (isDarkMode) {
         body.classList.add('dark-mode');
     }
