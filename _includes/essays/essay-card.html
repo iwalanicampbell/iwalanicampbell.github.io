@@ -1,5 +1,5 @@
 <div class="col-md-6 col-lg-4" xmlns="http://www.w3.org/1999/html">
-  <div class="card h-100 rounded">
+  <div class="card h-100 rounded {% if site.dark-mode %}bg-dark{% endif %}">
     <div class="card-body {% if site.dark-mode %}bg-dark{% endif %}">
       <h5 class="card-title {% if site.dark-mode %}text-white{% endif %}">{{ include.page.title }}</h5>
       <p class="card-text"><small class="text-muted">{{ include.page.date | date_to_string }}</small></p>
