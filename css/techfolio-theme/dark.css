@@ -1,0 +1,31 @@
+/* Dark Mode Theme: modifies the default theme for dark mode. */
+
+/* Dark mode color palette */
+:root {
+  --tf-blue1: #00a8e8; /* Modify to your preferred dark mode color */
+  --tf-blue2: #0086b3; /* Modify to your preferred dark mode color */
+  --tf-blue3: #006a8a; /* Modify to your preferred dark mode color */
+  --tf-blue4: #004e66; /* Modify to your preferred dark mode color */
+  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-link-color: var(--tf-blue1);
+  --tf-pill-bg: var(--tf-blue3);
+  --tf-icon-fill: var(--tf-blue1);
+  --tf-page-bg-color: #121212; /* Modify to your preferred dark mode background color */
+  --tf-footer-bg-color: #000000; /* Modify to your preferred dark mode footer background color */
+  --tf-projects-bg-color: #000000; /* Modify to your preferred dark mode projects background color */
+}
+
+/* Override text color */
+body, h1, h2, h3, h4, h5 {
+  color: #ffffff; /* Change text color to white for better contrast */
+}
+
+/* Override link color */
+a {
+  color: var(--tf-blue1); /* Change link color */
+}
+
+/* Override background color for specific elements */
+.navbar {
+  background-color: #000000; /* Change navbar background color */
+}
