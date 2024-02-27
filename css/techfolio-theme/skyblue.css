@@ -117,9 +117,14 @@ body.dark-mode {
 }
 
 /* Styles for icons in dark mode */
-.dark-mode .social-icon {
-  fill: #ffffff; /* White color for social icons in dark mode */
+.dark-mode .tf-social {
+  display: inline-block;
+  fill: #ffffff;
+  height: 1.5em;
+  vertical-align: -.1em;
+  width: 1.5em;
 }
+
 
 
 /* Rainbow RGB name */
