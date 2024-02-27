@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+<header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom" id="header">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.data.bio.basics.name }}</a>
     <div class="ms-auto">
@@ -15,10 +15,14 @@
 <script>
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
+    const header = document.getElementById('header'); // Get the header element
 
     darkModeToggle.addEventListener('click', () => {
         console.log('Dark mode button clicked');
         body.classList.toggle('dark-mode');
+
+        // Toggle dark mode for the header
+        header.classList.toggle('dark-mode');
 
         // Save user preference
         const isDarkMode = body.classList.contains('dark-mode');
@@ -30,5 +34,6 @@
     console.log('Is dark mode:', isDarkMode);
     if (isDarkMode) {
         body.classList.add('dark-mode');
+        header.classList.add('dark-mode'); // Add dark mode class to header if dark mode is enabled
     }
 </script>
