@@ -20,12 +20,17 @@
     darkModeToggle.addEventListener('click', () => {
         console.log('Dark mode button clicked');
         body.classList.toggle('dark-mode');
-
-        // Toggle dark mode for the header
         header.classList.toggle('dark-mode');
 
-        // Save user preference
+        // Change the button content based on dark mode state
         const isDarkMode = body.classList.contains('dark-mode');
+        if (isDarkMode) {
+            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+
+        // Save user preference
         localStorage.setItem('darkMode', isDarkMode);
     });
 
@@ -34,6 +39,7 @@
     console.log('Is dark mode:', isDarkMode);
     if (isDarkMode) {
         body.classList.add('dark-mode');
-        header.classList.add('dark-mode'); // Add dark mode class to header if dark mode is enabled
+        header.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
     }
 </script>
