@@ -52,12 +52,12 @@ a {
 
 /* Styles specific to dark mode */
 body.dark-mode {
-  background-color: var(--tf-page-bg-color); /* Dark mode background color */
+  background-color: #333333; /* Dark mode background color */
   color: #ffffff; /* Dark mode text color */
 }
 
 body.dark-mode .navbar {
-  background-color: var(--tf-footer-bg-color); /* Dark mode navbar background color */
+  background-color: #222222; /* Dark mode navbar background color */
 }
 
 /* Override color palette for dark mode */
