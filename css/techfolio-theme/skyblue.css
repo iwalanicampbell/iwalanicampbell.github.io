@@ -101,6 +101,22 @@ body.dark-mode {
     background-color: #212529; /* Dark background color for cards in dark mode */
 }
 
+/* Styles for buttons in dark mode */
+.dark-mode .btn,
+.dark-mode .btn-outline-dark {
+    color: #ffffff; /* Text color for buttons in dark mode */
+    background-color: #212529; /* Background color for buttons in dark mode */
+    border-color: #ffffff; /* Border color for buttons in dark mode */
+}
+
+.dark-mode .btn:hover,
+.dark-mode .btn-outline-dark:hover {
+    color: #ffffff; /* Text color for buttons on hover in dark mode */
+    background-color: #343a40; /* Background color for buttons on hover in dark mode */
+    border-color: #ffffff; /* Border color for buttons on hover in dark mode */
+}
+
+
 /* Rainbow RGB name */
 #name {
     font-size: 72px;
