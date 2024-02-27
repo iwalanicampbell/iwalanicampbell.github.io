@@ -62,7 +62,7 @@ body.dark-mode .navbar {
 /* Override color palette for dark mode */
 body.dark-mode {
   --tf-blue1: #222222; /* Darkest gray */
-  --tf-blue2: #333333; /* Darker gray */
+  --tf-blue2: #076db3; /* Darker gray */
   --tf-blue3: #555555; /* Dark gray */
   --tf-blue4: #777777; /* Medium dark gray */
   --bs-font-sans-serif: "Open Sans", sans-serif;
