@@ -13,7 +13,7 @@ body.dark-mode {
 /* Define light mode styles */
 /* For light mode styles, either define them directly or use specific selectors with higher specificity than the dark mode styles */
 /* Example: */
-body {
+body:not(.dark-mode) {
   background-color: #ffffff; /* Light mode background color */
   color: #333333; /* Light mode text color */
 }
