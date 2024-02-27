@@ -52,7 +52,6 @@ a {
 
 /* Styles specific to dark mode */
 body.dark-mode {
-  background-color: #333333; /* Dark mode background color */
   color: #ffffff; /* Dark mode text color */
 }
 
@@ -62,10 +61,17 @@ body.dark-mode .navbar {
 
 /* Override color palette for dark mode */
 body.dark-mode {
-  --tf-blue1: #00a8e8; /* Modify to your preferred dark mode color */
-  --tf-blue2: #0086b3; /* Modify to your preferred dark mode color */
-  --tf-blue3: #006a8a; /* Modify to your preferred dark mode color */
-  --tf-blue4: #004e66; /* Modify to your preferred dark mode color */
+  --tf-blue1: #333333; /* Darkest gray */
+  --tf-blue2: #555555; /* Darker gray */
+  --tf-blue3: #777777; /* Dark gray */
+  --tf-blue4: #999999; /* Medium dark gray */
+  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-link-color: var(--tf-blue1);
+  --tf-pill-bg: var(--tf-blue3);
+  --tf-icon-fill: var(--tf-blue1);
+  --tf-page-bg-color: var(--bs-white);
+  --tf-footer-bg-color: var(--tf-blue4);
+  --tf-projects-bg-color: var(--tf-blue4);
 }
 
 
