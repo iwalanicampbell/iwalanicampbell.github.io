@@ -54,10 +54,12 @@ a {
 /* Styles specific to dark mode */
 body.dark-mode {
   color: #ffffff; /* Dark mode text color */
+  font-family: "Ubuntu Mono", sans-serif;
 }
 
 body.dark-mode .navbar {
   background-color: #222222; /* Dark mode navbar background color */
+  font-family: "Ubuntu Mono", sans-serif;
 }
 
 /* Override color palette for dark mode */
@@ -79,12 +81,14 @@ body.dark-mode {
 .dark-mode #header {
   background-color: #333333; /* Dark mode background color */
   color: #aa80ff; /* Dark mode text color */
+  font-family: "Ubuntu Mono", sans-serif;
 }
 
 /* Customize other styles as needed */
 .dark-mode #header .navbar-brand,
 .dark-mode #header .nav-link {
   color: #aa80ff; /* Dark mode text color for brand and links */
+  font-family: "Ubuntu Mono", sans-serif;
 }
 
 /* Styles for headings in dark mode */
