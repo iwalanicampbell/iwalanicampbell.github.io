@@ -1,4 +1,4 @@
-<div class="card mb-3 rounded {% if isDarkMode %}dark-mode{% endif %}">
+<div class="card mb-3 rounded essayCard {% if isDarkMode %}dark-mode{% endif %}">
   <div class="row g-0">
     <div class="col-sm-6 col-md-4">
       <img src="{{ site.baseurl }}/{{ include.page.image }}" height="225px" class="rounded-start">
@@ -26,19 +26,4 @@
   </div>
 </div>
 
-<script>
-  const body = document.body;
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-  // Update dark mode state when toggled
-  document.getElementById('darkModeToggle').addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDarkMode = body.classList.contains('dark-mode');
-    localStorage.setItem('darkMode', isDarkMode);
-  });
-
-  // Check for user preference
-  if (isDarkMode) {
-    body.classList.add('dark-mode');
-  }
-</script>
