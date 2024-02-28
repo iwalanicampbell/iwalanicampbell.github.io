@@ -69,8 +69,8 @@ body.dark-mode {
   --tf-pill-bg: #D4AAEB;           
   --tf-icon-fill: var(--bs-white); 
   --tf-page-bg-color: #271648;     /* Darkest gray */
-  --tf-footer-bg-color: #777777;   /* Medium dark gray */
-  --tf-projects-bg-color: #777777; /* Medium dark gray */
+  --tf-footer-bg-color: #12072e;   /* Medium dark gray */
+  --tf-projects-bg-color: #12072e; /* Medium dark gray */
 }
 
 /* Styles for the header in dark mode */
@@ -93,7 +93,7 @@ body.dark-mode {
 .dark-mode h3,
 .dark-mode h4,
 .dark-mode h5 {
-  color: #481592; /* Green text color in dark mode */
+  color: #b460a9; /* Green text color in dark mode */
   font-family: "Ubuntu Mono", sans-serif; /* Specify the font family */
 }
 
