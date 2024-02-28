@@ -22,16 +22,12 @@
         body.classList.toggle('dark-mode');
         header.classList.toggle('dark-mode');
 
-        // Change the button icon based on dark mode state
+        // Change the button content based on dark mode state
         const isDarkMode = body.classList.contains('dark-mode');
         if (isDarkMode) {
-            darkModeToggle.classList.remove('btn-outline-dark');
-            darkModeToggle.classList.add('btn-outline-light');
-            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill" style="fill: white;"></i>';
+            darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"><path d="M12.083 2.75a7 7 0 1 0 0 10.5c-.224-.3-.474-.592-.75-.875a6.056 6.056 0 0 1 0-8.75c.276-.283.526-.575.75-.875zM8 0a8 8 0 0 1 5.657 13.657A8 8 0 0 1 2.343 2.343 8 8 0 0 1 8 0z"/></svg>';
         } else {
-            darkModeToggle.classList.remove('btn-outline-light');
-            darkModeToggle.classList.add('btn-outline-dark');
-            darkModeToggle.textContent = 'Dark Mode';
+            darkModeToggle.innerHTML = 'Dark Mode';
         }
 
         // Save user preference
@@ -44,9 +40,7 @@
     if (isDarkMode) {
         body.classList.add('dark-mode');
         header.classList.add('dark-mode');
-        darkModeToggle.classList.remove('btn-outline-dark');
-        darkModeToggle.classList.add('btn-outline-light');
-        darkModeToggle.innerHTML = '<i class="bi bi-moon-fill" style="fill: white;"></i>';
+        darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"><path d="M12.083 2.75a7 7 0 1 0 0 10.5c-.224-.3-.474-.592-.75-.875a6.056 6.056 0 0 1 0-8.75c.276-.283.526-.575.75-.875zM8 0a8 8 0 0 1 5.657 13.657A8 8 0 0 1 2.343 2.343 8 8 0 0 1 8 0z"/></svg>';
     }
 </script>
 
