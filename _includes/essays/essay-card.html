@@ -28,16 +28,17 @@
 
 <script>
   const body = document.body;
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-  // Check for user preference
-  if (isDarkMode) {
-    body.classList.add('dark-mode');
-  }
 
   // Update dark mode state when toggled
   document.getElementById('darkModeToggle').addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
   });
+
+  // Check for user preference
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+  }
 </script>
