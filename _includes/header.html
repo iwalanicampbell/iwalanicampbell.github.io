@@ -13,34 +13,34 @@
 </header>
 
 <script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-    const header = document.getElementById('header'); // Get the header element
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+  const header = document.getElementById('header'); // Get the header element
 
-    darkModeToggle.addEventListener('click', () => {
-        console.log('Dark mode button clicked');
-        body.classList.toggle('dark-mode');
-        header.classList.toggle('dark-mode');
+  darkModeToggle.addEventListener('click', () => {
+    console.log('Dark mode button clicked');
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
 
-        // Change the button content based on dark mode state
-        const isDarkMode = body.classList.contains('dark-mode');
-        if (isDarkMode) {
-            darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"><path d="M12.083 2.75a7 7 0 1 0 0 10.5c-.224-.3-.474-.592-.75-.875a6.056 6.056 0 0 1 0-8.75c.276-.283.526-.575.75-.875zM8 0a8 8 0 0 1 5.657 13.657A8 8 0 0 1 2.343 2.343 8 8 0 0 1 8 0z"/></svg>';
-        } else {
-            darkModeToggle.innerHTML = 'Dark Mode';
-        }
-
-        // Save user preference
-        localStorage.setItem('darkMode', isDarkMode);
-    });
-
-    // Check for user preference
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    console.log('Is dark mode:', isDarkMode);
+    // Change the button content based on dark mode state
+    const isDarkMode = body.classList.contains('dark-mode');
     if (isDarkMode) {
-        body.classList.add('dark-mode');
-        header.classList.add('dark-mode');
-        darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"><path d="M12.083 2.75a7 7 0 1 0 0 10.5c-.224-.3-.474-.592-.75-.875a6.056 6.056 0 0 1 0-8.75c.276-.283.526-.575.75-.875zM8 0a8 8 0 0 1 5.657 13.657A8 8 0 0 1 2.343 2.343 8 8 0 0 1 8 0z"/></svg>';
+      darkModeToggle.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
+    } else {
+      darkModeToggle.innerHTML = 'Dark Mode';
     }
+
+    // Save user preference
+    localStorage.setItem('darkMode', isDarkMode);
+  });
+
+  // Check for user preference
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  console.log('Is dark mode:', isDarkMode);
+  if (isDarkMode) {
+    body.classList.add('dark-mode');
+    header.classList.add('dark-mode');
+    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
+  }
 </script>
 
