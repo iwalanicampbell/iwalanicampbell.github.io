@@ -22,11 +22,15 @@
         body.classList.toggle('dark-mode');
         header.classList.toggle('dark-mode');
 
-        // Change the button content based on dark mode state
+        // Change the button icon based on dark mode state
         const isDarkMode = body.classList.contains('dark-mode');
         if (isDarkMode) {
-            darkModeToggle.innerHTML = '<i class="bi bi-moon-stars-fill" style="fill: white;"></i> Dark Mode';
+            darkModeToggle.classList.remove('btn-outline-dark');
+            darkModeToggle.classList.add('btn-outline-light');
+            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill" style="fill: white;"></i>';
         } else {
+            darkModeToggle.classList.remove('btn-outline-light');
+            darkModeToggle.classList.add('btn-outline-dark');
             darkModeToggle.textContent = 'Dark Mode';
         }
 
@@ -40,7 +44,9 @@
     if (isDarkMode) {
         body.classList.add('dark-mode');
         header.classList.add('dark-mode');
-        darkModeToggle.innerHTML = '<i class="bi bi-moon-stars-fill" style="fill: white;"></i> Dark Mode';
+        darkModeToggle.classList.remove('btn-outline-dark');
+        darkModeToggle.classList.add('btn-outline-light');
+        darkModeToggle.innerHTML = '<i class="bi bi-moon-fill" style="fill: white;"></i>';
     }
 </script>
 
