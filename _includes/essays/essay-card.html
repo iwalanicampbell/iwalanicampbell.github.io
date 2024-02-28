@@ -1,15 +1,19 @@
-<div class="card mb-3 rounded">
+<div class="card mb-3 rounded {% if body.classList.contains('dark-mode') %}dark-mode{% endif %}">
   <div class="row g-0">
     <div class="col-sm-6 col-md-4">
       <img src="{{ site.baseurl }}/{{ include.page.image }}" height="225px" class="rounded-start">
     </div>
     <div class="col-sm-6 col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{ include.page.title }} <small class="text-muted float-end">{{ include.page.date }}</small></h5>
-        <p class="card-text">{{ include.page.summary }}</p>
+      <div class="card-body {% if body.classList.contains('dark-mode') %}dark-mode{% endif %}">
+        <h5 class="card-title {% if body.classList.contains('dark-mode') %}text-white{% endif %}">
+          {{ include.page.title }}
+          <small class="text-muted float-end">{{ include.page.date }}</small>
+        </h5>
+        <p class="card-text {% if body.classList.contains('dark-mode') %}text-white{% endif %}">{{ include.page.summary }}</p>
         <p>
           {% for label in include.page.labels %}
-          <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
+          <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{
+            label }}</span>
           {% endfor %}
         </p>
         {% if page.projecturl %}
@@ -21,5 +25,3 @@
     </div>
   </div>
 </div>
-
-
