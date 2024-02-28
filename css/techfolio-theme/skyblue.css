@@ -58,7 +58,7 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar {
-  background-color: #222222; /* Dark mode navbar background color */
+  background-color: #12072e; /* Dark mode navbar background color */
   font-family: "Ubuntu Mono", sans-serif;
 }
 
@@ -68,22 +68,22 @@ body.dark-mode {
   --bs-link-color: #5e5ca0;
   --tf-pill-bg: #D4AAEB;           
   --tf-icon-fill: var(--bs-white); 
-  --tf-page-bg-color: #271648;     /* Darkest gray */
-  --tf-footer-bg-color: #12072e;   /* Medium dark gray */
-  --tf-projects-bg-color: #12072e; /* Medium dark gray */
+  --tf-page-bg-color: #12072e;     
+  --tf-footer-bg-color: #12072e;  
+  --tf-projects-bg-color: #5e5ca0; 
 }
 
 /* Styles for the header in dark mode */
 .dark-mode #header {
   background-color: #333333; /* Dark mode background color */
-  color: #aa80ff; /* Dark mode text color */
+  color: #0e0529; /* Dark mode text color */
   font-family: "Ubuntu Mono", sans-serif;
 }
 
 /* Customize other styles as needed */
 .dark-mode #header .navbar-brand,
 .dark-mode #header .nav-link {
-  color: #aa80ff; /* Dark mode text color for brand and links */
+  color: #0e0529; /* Dark mode text color for brand and links */
   font-family: "Ubuntu Mono", sans-serif;
 }
 
@@ -112,7 +112,7 @@ body.dark-mode {
 .dark-mode .btn:hover,
 .dark-mode .btn-outline-dark:hover {
     color: #ffffff; /* Text color for buttons on hover in dark mode */
-    background-color: #343a40; /* Background color for buttons on hover in dark mode */
+    background-color: #5e5ca0; /* Background color for buttons on hover in dark mode */
     border-color: #ffffff; /* Border color for buttons on hover in dark mode */
 }
 
