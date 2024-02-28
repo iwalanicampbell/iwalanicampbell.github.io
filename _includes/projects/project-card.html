@@ -5,7 +5,10 @@
     </div>
     <div class="col-sm-6 col-md-8">
       <div class="card-body">
-        <h5 class="card-title {% if body.classList.contains('dark-mode') %}text-white{% endif %}">{{ include.page.title }} <small class="text-muted float-end">{{ include.page.date }}</small></h5>
+        <h5 class="card-title {% if body.classList.contains('dark-mode') %}text-white{% endif %}">
+          {{ include.page.title }} 
+          <small class="text-muted float-end">{{ include.page.date }}</small>
+        </h5>
         <p class="card-text {% if body.classList.contains('dark-mode') %}text-white{% endif %}">{{ include.page.summary }}</p>
         <p>
           {% for label in include.page.labels %}
