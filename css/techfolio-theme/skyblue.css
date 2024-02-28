@@ -66,7 +66,7 @@ body.dark-mode .navbar {
 body.dark-mode {
   --bs-font-sans-serif: "Ubuntu Mono", sans-serif; /* NOT REALLY SANS SERIF*/
   --bs-link-color: #D4AF37;
-  --tf-pill-bg: #aa80ff;           /* Darker gray */
+  --tf-pill-bg: #508991;           /* Darker gray */
   --tf-icon-fill: var(--bs-white); /* Darker gray */
   --tf-page-bg-color: #222222;     /* Darkest gray */
   --tf-footer-bg-color: #777777;   /* Medium dark gray */
