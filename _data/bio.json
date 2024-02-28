@@ -6,8 +6,8 @@
     "email": "iwalaniy@hawaii.edu",
     "phone": "",
     "website": "https://iwalanicampbell.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2025.",
-    "location": { "address": "", "postalCode": "96819", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2025.",
+    "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
       { "network": "linkedin", "username": "iwalanicampbell", "url": "http://linkedin.com/in/iwalani-campbell" }
@@ -18,22 +18,22 @@
     { "name": "Video Game Design" },
     { "name": "Software Engineering" },
     { "name": "Neural Networks" },
-    { "name": "Capture The Flag" }
+    { "name": "Software Reverse Engineering" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Python" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "x86 Assembly" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Windows" ]
+      "keywords": [ "MacOS", "Ubuntu/Linux", "Git/GitHub", "Windows" ]
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2025)",
+      "area": "Computer Science (expected Fall, 2025)",
       "studyType": "B.S.",
       "startDate": "2021-09-01",
       "endDate": "Present",
@@ -77,6 +77,8 @@
       "endDate": "",
       "summary": "",
       "highlights": [
+        "Scholar, CyberCorps SFS 2023-Present",
+        "Member, Native Hawaiian Science & Engineering Mentorship Program 2023-Present",
         "Member, ACM Manoa, 2021-Present",
         "Member, Manoa Scholars Club, 2021-Present",
         "Member, Gray Hats, UH Manoa, 2021-Present"
