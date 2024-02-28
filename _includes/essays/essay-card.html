@@ -28,6 +28,7 @@
 
 <script>
   const body = document.body;
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
   // Update dark mode state when toggled
   document.getElementById('darkModeToggle').addEventListener('click', () => {
@@ -37,7 +38,6 @@
   });
 
   // Check for user preference
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
   if (isDarkMode) {
     body.classList.add('dark-mode');
   }
