@@ -127,6 +127,18 @@ layout: home
     return selectedWords;
   }
 
+  // Function to see if arrays contain all correct word elements
+  function containsAll(checkedArray, answerArray) {
+    const checkedSet = new Set(checkedArray);
+    const answerSet = new Set(answerArray);
+    for (const element of answerSet) {
+      if (!checkedSet.has(element)) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
   // Function to check answers
   function checkAnswers() {
     const selectedWords = getSelectedWords();
