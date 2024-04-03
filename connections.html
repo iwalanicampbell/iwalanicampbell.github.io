@@ -146,10 +146,9 @@ layout: home
   // Function to check if two arrays are equal
   function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) return false;
-    }
-    return true;
+    const sortedArr1 = arr1.slice().sort();
+    const sortedArr2 = arr2.slice().sort();
+    return sortedArr1.every((value, index) => value === sortedArr2[index]);
   }
   
   // Render initial boxes
