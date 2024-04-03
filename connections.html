@@ -6,29 +6,85 @@ layout: home
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connections</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connections Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    max-width: 600px;
+    text-align: center;
+  }
+  .box {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .word {
+    cursor: pointer;
+  }
+  .selected {
+    background-color: #ffc107;
+  }
+</style>
 </head>
 <body>
-    <h1>Connections</h1>
-    <div id="word-groups">
-        <div class="word-group">
-            <input type="text" class="word-input" maxlength="15">
-        </div>
-        <div class="word-group">
-            <input type="text" class="word-input" maxlength="15">
-        </div>
-        <div class="word-group">
-            <input type="text" class="word-input" maxlength="15">
-        </div>
-        <div class="word-group">
-            <input type="text" class="word-input" maxlength="15">
-        </div>
-    </div>
-    <button id="check-button">Check</button>
-    <div id="result"></div>
-    <script src="script.js"></script>
+<div class="container">
+  <div id="box1" class="box"></div>
+  <div id="box2" class="box"></div>
+  <div id="box3" class="box"></div>
+  <div id="box4" class="box"></div>
+</div>
+
+<script>
+  // Array of words for each box
+  const words = [
+    ['Apple', 'Banana', 'Orange', 'Grape'],
+    ['Dog', 'Cat', 'Rabbit', 'Mouse'],
+    ['Car', 'Bike', 'Bus', 'Train'],
+    ['Chair', 'Table', 'Desk', 'Sofa']
+  ];
+
+  // Function to render words in each box
+  function renderBox(boxId, wordArray) {
+    const box = document.getElementById(boxId);
+    box.innerHTML = '';
+    wordArray.forEach(word => {
+      const wordElement = document.createElement('div');
+      wordElement.textContent = word;
+      wordElement.classList.add('word');
+      wordElement.addEventListener('click', () => selectWord(wordElement));
+      box.appendChild(wordElement);
+    });
+  }
+
+  // Function to select a word
+  function selectWord(wordElement) {
+    if (wordElement.classList.contains('selected')) {
+      wordElement.classList.remove('selected');
+    } else {
+      const selectedWords = document.querySelectorAll('.selected');
+      if (selectedWords.length < 3) {
+        wordElement.classList.add('selected');
+      } else {
+        alert('You can only select up to 3 words.');
+      }
+    }
+  }
+
+  // Render initial boxes
+  for (let i = 0; i < words.length; i++) {
+    renderBox('box' + (i + 1), words[i]);
+  }
+</script>
 </body>
 </html>
