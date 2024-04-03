@@ -112,7 +112,7 @@ layout: home
     }
   }
 
-  // Function to retrieve selected words from each box
+   // Function to retrieve selected words from each box
   function getSelectedWords() {
     const selectedWords = [];
     for (let i = 1; i <= 16; i++) {
@@ -121,7 +121,7 @@ layout: home
       if (selectedWord) {
         selectedWords.push(selectedWord.textContent);
       } else {
-        selectedWords.push(null);
+        return [];
       }
     }
     return selectedWords;
@@ -131,7 +131,7 @@ layout: home
   function checkAnswers() {
     const selectedWords = getSelectedWords();
     if (selectedWords.some(word => word === null)) {
-      alert('Please select one word from each box.');
+      alert('Please select four words/box.');
       return;
     }
     for (let i = 0; i < correctAnswers.length; i++) {
