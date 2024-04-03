@@ -112,7 +112,7 @@ layout: home
     }
   }
 
-     // Function to retrieve selected words from each box
+  // Function to retrieve selected words from each box
   function getSelectedWords() {
     const selectedWords = [];
     for (let i = 1; i <= 16; i++) {
@@ -121,7 +121,7 @@ layout: home
       if (selectedWord) {
         selectedWords.push(selectedWord.textContent);
       } else {
-        return [];
+        selectedWords.push(null);
       }
     }
     return selectedWords;
@@ -130,24 +130,17 @@ layout: home
   // Function to check answers
   function checkAnswers() {
     const selectedWords = getSelectedWords();
-    if (selectedWords.length !== 16) {
+    if (selectedWords.some(word => word === null)) {
       alert('Please select one word from each box.');
       return;
     }
-    let allCorrect = true;
     for (let i = 0; i < correctAnswers.length; i++) {
-      const correctGroup = correctAnswers[i];
-      const selectedGroup = selectedWords.slice(i * 4, i * 4 + 4);
-      if (!arraysEqual(correctGroup, selectedGroup)) {
-        allCorrect = false;
-        break;
+      if (arraysEqual(correctAnswers[i], selectedWords)) {
+        alert(`Congratulations! Your answers for Group ${i + 1} are correct!`);
+        return;
       }
     }
-    if (allCorrect) {
-      alert('Congratulations! Your answers are correct!');
-    } else {
-      alert('Sorry, your answers are incorrect. Please try again.');
-    }
+    alert('Sorry, your answers are incorrect. Please try again.');
   }
 
   // Function to check if two arrays are equal
@@ -158,6 +151,7 @@ layout: home
     }
     return true;
   }
+  
   // Render initial boxes
   for (let i = 0; i < words.length; i++) {
     renderBox('box' + (i + 1), words[i]);
