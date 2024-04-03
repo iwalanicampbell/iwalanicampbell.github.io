@@ -4,7 +4,7 @@ type: essay
 image: 
 title: Reflections on Fall 2023
 # All dates must be YYYY-MM-DD format!
-date: 2023-04-02
+date: 2024-04-02
 published: true
 labels:
   - ICS312
