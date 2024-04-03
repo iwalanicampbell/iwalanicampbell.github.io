@@ -112,13 +112,18 @@ layout: home
     }
   }
 
-    // Function to retrieve selected words from each box
+     // Function to retrieve selected words from each box
   function getSelectedWords() {
     const selectedWords = [];
-    const wordElements = document.querySelectorAll('.word.selected');
-    wordElements.forEach(element => {
-      selectedWords.push(element.textContent);
-    });
+    for (let i = 1; i <= 16; i++) {
+      const wordElement = document.getElementById('box' + i);
+      const selectedWord = wordElement.querySelector('.selected');
+      if (selectedWord) {
+        selectedWords.push(selectedWord.textContent);
+      } else {
+        return [];
+      }
+    }
     return selectedWords;
   }
 
