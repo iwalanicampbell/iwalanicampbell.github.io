@@ -45,7 +45,7 @@ a {
 }
 
 .navbar-light {
-  --bs-navbar-color: var(--tfblue4)
+  --bs-navbar-color: var(--tfblue4);
   
 }
 
