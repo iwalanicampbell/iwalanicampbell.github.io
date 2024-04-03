@@ -40,7 +40,7 @@ layout: home
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container" style="margin-top: 225px; margin-bottom: 225px;">
   <div class="row">
     <div id="box1" class="box"></div>
     <div id="box2" class="box"></div>
@@ -65,16 +65,24 @@ layout: home
     <div id="box15" class="box"></div>
     <div id="box16" class="box"></div>
     </div>
-  <button id="check-button">Check Grouping</button>
+  <button id="check-button" onclick="checkAnswers()">Check Grouping</button>
 </div>
 
 <script>
   // Array of words for each box
   const words = [
     ['也'], ['软件工程'], ['新'], ['美丽'],
-    ['地'], ['心'], ['游戏'], ['漂亮'],
+    ['与'], ['心'], ['电子游戏'], ['漂亮'],
     ['信'], ['秀丽'], ['人工智能'], ['而且'],
     ['网路安全'], ['另外'], ['辛'], ['精湛']
+  ];
+
+  // Array of correct answers for each group
+  const correctAnswers = [
+    ['也', '与', '而且', '另外'],
+    ['软件工程', '电子游戏', '人工智能', '网路安全'],
+    ['新', '心', '信', '辛'],
+    ['美丽', '漂亮', '秀丽', '精湛']
   ];
 
   // Function to render words in each box
@@ -104,6 +112,47 @@ layout: home
     }
   }
 
+    // Function to retrieve selected words from each box
+  function getSelectedWords() {
+    const selectedWords = [];
+    const wordElements = document.querySelectorAll('.word.selected');
+    wordElements.forEach(element => {
+      selectedWords.push(element.textContent);
+    });
+    return selectedWords;
+  }
+
+  // Function to check answers
+  function checkAnswers() {
+    const selectedWords = getSelectedWords();
+    if (selectedWords.length !== 16) {
+      alert('Please select one word from each box.');
+      return;
+    }
+    let allCorrect = true;
+    for (let i = 0; i < correctAnswers.length; i++) {
+      const correctGroup = correctAnswers[i];
+      const selectedGroup = selectedWords.slice(i * 4, i * 4 + 4);
+      if (!arraysEqual(correctGroup, selectedGroup)) {
+        allCorrect = false;
+        break;
+      }
+    }
+    if (allCorrect) {
+      alert('Congratulations! Your answers are correct!');
+    } else {
+      alert('Sorry, your answers are incorrect. Please try again.');
+    }
+  }
+
+  // Function to check if two arrays are equal
+  function arraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) return false;
+    }
+    return true;
+  }
   // Render initial boxes
   for (let i = 0; i < words.length; i++) {
     renderBox('box' + (i + 1), words[i]);
