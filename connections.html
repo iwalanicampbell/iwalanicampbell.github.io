@@ -134,13 +134,19 @@ layout: home
       alert('Please select four words/box.');
       return;
     }
-    for (let i = 0; i < correctAnswers.length; i++) {
-      if (arraysEqual(correctAnswers[i], selectedWords)) {
-        alert(`Congratulations! Your answers for Group ${i + 1} are correct!`);
-        return;
+  let correctFound = false;
+    for (const correctGroup of correctAnswers) {
+      if (containsAll(selectedWords, correctGroup)) {
+        correctFound = true;
+        break;
       }
     }
-    alert('Sorry, your answers are incorrect. Please try again.');
+  
+    if (correctFound) {
+      alert('Congratulations! Your answers are correct!');
+    } else {
+      alert('Sorry, your answers are incorrect. Please try again.');
+    }
   }
 
   // Function to check if two arrays are equal
