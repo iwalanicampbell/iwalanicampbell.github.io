@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-image: src="/img/reflectionsFall2023.jpg"
+image: img/reflectionsFall2023.jpg"
 title: Reflections on Fall 2023
 # All dates must be YYYY-MM-DD format!
 date: 2024-04-02
