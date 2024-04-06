@@ -129,15 +129,19 @@ layout: home
 
   // Function to see if arrays contain all correct word elements
   function containsAll(checkedArray, answerArray) {
-    const checkedSet = new Set(checkedArray);
-    const answerSet = new Set(answerArray);
-    for (const element of answerSet) {
-      if (!checkedSet.has(element)) {
-        return false;
-      }
+  if (checkedArray.length !== answerArray.length) return false;
+
+  const checkedSet = new Set(checkedArray);
+  const answerSet = new Set(answerArray);
+
+  for (const word of checkedSet) {
+    if (!answerSet.has(word)) {
+      return false;
     }
-    return true;
   }
+
+  return true;
+}
   
   // Function to check answers
   function checkAnswers() {
