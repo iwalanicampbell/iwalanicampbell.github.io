@@ -98,34 +98,29 @@ layout: home
     });
   }
 
-// Function to select a word
-  function selectWord(wordElement) {
-    if (wordElement.classList.contains('selected')) {
-      wordElement.classList.remove('selected');
-    } else {
-      const selectedWords = document.querySelectorAll('.selected');
-      if (selectedWords.length < 4) {
-        wordElement.classList.add('selected');
-      } else {
-        alert('You can only select up to 4 words.');
-      }
-    }
-  }
+// Global array to store selected words
+let selectedWords = [];
 
-  // Function to retrieve selected words from each box
-  function getSelectedWords() {
-    const selectedWords = [];
-    for (let i = 1; i <= 16; i++) {
-      const wordElement = document.getElementById('box' + i);
-      const selectedWord = wordElement.querySelector('.selected');
-      if (selectedWord) {
-        selectedWords.push(selectedWord.textContent);
-      } else {
-        return [];
-      }
+// Function to select a word
+function selectWord(wordElement) {
+  if (wordElement.classList.contains('selected')) {
+    wordElement.classList.remove('selected');
+    // Remove the word from selectedWords array
+    selectedWords = selectedWords.filter(word => word !== wordElement.textContent);
+  } else {
+    const selectedWordCount = document.querySelectorAll('.selected').length;
+    if (selectedWordCount < 4) {
+      wordElement.classList.add('selected');
+      // Add the word to selectedWords array
+      selectedWords.push(wordElement.textContent);
+    } else {
+      alert('You can only select up to 4 words.');
     }
-    return selectedWords;
   }
+  
+  // Return the updated array of selected words
+  return selectedWords;
+}
 
   // Function to see if arrays contain all correct word elements
   function containsAll(checkedArray, answerArray) {
@@ -145,7 +140,6 @@ layout: home
   
   // Function to check answers
 function checkAnswers() {
-  const selectedWords = getSelectedWords();
   if (selectedWords.some(word => word === null)) {
     alert('Please select four words/box.');
     return;
