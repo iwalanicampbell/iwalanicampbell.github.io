@@ -145,7 +145,7 @@ layout: home
   
   // Function to check answers
 function checkAnswers() {
-  const selectedWords = selectedWord();
+  const selectedWords = getSelectedWords();
   if (selectedWords.some(word => word === null)) {
     alert('Please select four words/box.');
     return;
