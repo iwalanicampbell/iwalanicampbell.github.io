@@ -98,7 +98,7 @@ layout: home
     });
   }
 
-  // Function to select a word
+// Function to select a word
   function selectWord(wordElement) {
     if (wordElement.classList.contains('selected')) {
       wordElement.classList.remove('selected');
@@ -112,21 +112,20 @@ layout: home
     }
   }
 
-  // Function to get the selected words 
-function selectWord(wordElement) {
-  if (wordElement.classList.contains('selected')) {
-    console.log("Removing selection from:", wordElement.textContent);
-    wordElement.classList.remove('selected');
-  } else {
-    const selectedWords = document.querySelectorAll('.selected');
-    if (selectedWords.length < 4) {
-      console.log("Adding selection to:", wordElement.textContent);
-      wordElement.classList.add('selected');
-    } else {
-      alert('You can only select up to 4 words.');
+  // Function to retrieve selected words from each box
+  function getSelectedWords() {
+    const selectedWords = [];
+    for (let i = 1; i <= 16; i++) {
+      const wordElement = document.getElementById('box' + i);
+      const selectedWord = wordElement.querySelector('.selected');
+      if (selectedWord) {
+        selectedWords.push(selectedWord.textContent);
+      } else {
+        return [];
+      }
     }
+    return selectedWords;
   }
-}
 
   // Function to see if arrays contain all correct word elements
   function containsAll(checkedArray, answerArray) {
@@ -146,7 +145,7 @@ function selectWord(wordElement) {
   
   // Function to check answers
 function checkAnswers() {
-  const selectedWords = getSelectedWords();
+  const selectedWords = selectedWord();
   if (selectedWords.some(word => word === null)) {
     alert('Please select four words/box.');
     return;
