@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/connections.png
 title: "Chinese Connections-esque Game"
-date: 2024
+date: 2024-04-05
 published: true
 labels:
   - Javascript
