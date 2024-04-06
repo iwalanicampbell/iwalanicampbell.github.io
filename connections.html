@@ -144,26 +144,30 @@ layout: home
 }
   
   // Function to check answers
-  function checkAnswers() {
-    const selectedWords = getSelectedWords();
-    if (selectedWords.some(word => word === null)) {
-      alert('Please select four words/box.');
-      return;
-    }
+function checkAnswers() {
+  const selectedWords = getSelectedWords();
+  if (selectedWords.some(word => word === null)) {
+    alert('Please select four words/box.');
+    return;
+  }
+
+  console.log("Selected Words:", selectedWords);
+
   let correctFound = false;
-    for (const correctGroup of correctAnswers) {
-      if (containsAll(selectedWords, correctGroup)) {
-        correctFound = true;
-        break;
-      }
-    }
-  
-    if (correctFound) {
-      alert('Congratulations! Your answers are correct!');
-    } else {
-      alert('Sorry, your answers are incorrect. Please try again.');
+  for (const correctGroup of correctAnswers) {
+    console.log("Correct Group:", correctGroup);
+    if (containsAll(selectedWords, correctGroup)) {
+      correctFound = true;
+      break;
     }
   }
+
+  if (correctFound) {
+    alert('Congratulations! Your answers are correct!');
+  } else {
+    alert('Sorry, your answers are incorrect. Please try again.');
+  }
+}
 
   // Function to check if two arrays are equal
   function arraysEqual(arr1, arr2) {
