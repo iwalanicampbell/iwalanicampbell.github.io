@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/connections.png
+image: img/connections.PNG
 title: "Chinese Connections-esque Game"
 date: 2024-04-05
 published: true
