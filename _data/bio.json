@@ -6,7 +6,7 @@
     "email": "iwalaniy@hawaii.edu",
     "phone": "",
     "website": "https://iwalanicampbell.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2025.",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I am also studying for a minor in Chinese, I expect to graduate in Fall, 2025.",
     "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
@@ -41,25 +41,59 @@
       ]
     }
   ],
+  "certifications": [
+  {
+    "title": "The Bits and Bytes of Computer Networking",
+    "organization": "Google",
+    "date": "Jan 2022",
+    "summary": "Certification showing proficiency in fundamental knowledge of networking."
+    },
+    {
+    "title": "Technical Support Fundamentals",
+    "organization": "Google",
+    "date": "December 2021",
+    "summary": "Certification demonstrating knowledge of basic technical support fundamentals."
+    },
+    "title": "College Reading and Learning Association's International Training Certification (Level 1)",
+    "organization": "College Reading and Learning Association",
+    "date": "May 2023",
+    "summary": "Certification validating professional standards of skill and training for tutors and peer educators;"
+    }
+  ],
   "work": [
+    {
+      "company": "Department of Defense",
+      "position": "Intern",
+      "website": "https://windward.hawaii.edu/services-for-students/tutoring/ka-piko/math-lab/",
+      "startDate": "2021-08-01",
+      "endDate": "Present",
+      "summary": "Language Analyst Intern",
+      "highlights": [
+        "Translated and summarized key political and military reports and documents from Chinese sources",
+        "Synthesized large amounts of information from multiple sources to produce intelligence assessments and reports",
+        " Contributed to intelligence gathering and analysis efforts through language-based research and reporting"
+      ]
+    },
     {
       "company": "Windward Community College",
       "position": "Ka Piko Math Tutor",
       "website": "https://windward.hawaii.edu/services-for-students/tutoring/ka-piko/math-lab/",
       "startDate": "2022-08-01",
-      "endDate": "Present",
+      "endDate": "2023-05-15",
       "summary": "Math Lab Tutor",
       "highlights": [
         "Motivate and guide students to find their own answers",
-        "Helping to improve studentsʻ understanding of important concepts and problem solving processes"
+        "Helping to improve students understanding of important concepts and problem-solving processes",
+        "Assisted students in understanding and applying mathematical concepts, including algebra, geometry, and calculus",
+        "Built positive and supportive relationships with students, fostering a positive and inclusive learning environment"
       ]
     },
     {
-      "company": "DOD",
+      "company": "Department of Defense",
       "position": "Intern",
       "website": "",
       "startDate": "2021-06-01",
-      "endDate": "Present",
+      "endDate": "2021-08-01",
       "summary": "Published updated versions of Jupyter Notebooks that improve querying, retrieving, parsing, and presentation of sensitive data for analysts.",
       "highlights": [
         "Prepared and delivered briefings to senior executives",
@@ -86,6 +120,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "Dean's List",
+      "date": "2022-2023",
+      "awarder": "UH Manoa",
+      "summary": "Scholarly award for students who demonstrate academic excellence."
+    },
     {
       "title": "Provost Scholarship",
       "date": "2021-Present",
