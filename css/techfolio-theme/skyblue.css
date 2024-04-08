@@ -68,10 +68,10 @@ body.dark-mode {
   --bs-link-color: #D4AF37;
   --tf-pill-bg: #508991;           /* Darker gray */
   --tf-icon-fill: var(--bs-white); /* Darker gray */
-  --tf-page-bg-color: #222222;     /* Darkest gray */
+  --tf-page-bg-color: #040015;     /* Darkest gray */
   --tf-footer-bg-color: #262736;   /* Medium dark gray */
   --tf-projects-bg-color: #262736; /* Medium dark gray */
-  background-color: #222222; /* Set the background color for dark mode */
+  background-color: #040015; /* Set the background color for dark mode */
 }
 
 /* Styles for the header in dark mode */
