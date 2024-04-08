@@ -47,19 +47,20 @@
     "organization": "Google",
     "date": "Jan 2022",
     "summary": "Certification showing proficiency in fundamental knowledge of networking."
-    },
-    {
+  },
+  {
     "title": "Technical Support Fundamentals",
     "organization": "Google",
     "date": "December 2021",
     "summary": "Certification demonstrating knowledge of basic technical support fundamentals."
-    },
+  },
+  {
     "title": "College Reading and Learning Association's International Training Certification (Level 1)",
     "organization": "College Reading and Learning Association",
     "date": "May 2023",
-    "summary": "Certification validating professional standards of skill and training for tutors and peer educators;"
-    }
-  ],
+    "summary": "Certification validating professional standards of skill and training for tutors and peer educators"
+  }
+],
   "work": [
     {
       "company": "Department of Defense",
