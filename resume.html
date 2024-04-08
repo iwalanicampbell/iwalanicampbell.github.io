@@ -110,8 +110,8 @@ layout: home
       </div>
     </div>
     {% endif %}
-
-    {% if site.data.bio.certifications %}
+  
+  {% if site.data.bio.certifications %}
   <div class="row pt-4 align-items-start">
     <div class="col-lg-3">
       <h1 class="display-6 text-start m-0">Certifications</h1>
@@ -122,16 +122,19 @@ layout: home
         <div class="col-9">
           <p class="mb-0"><b>{{ entry.title }}</b></p>
           <p class="mb-0">{{ entry.organization }}</p>
-          <p class="mb-0">{{ entry.date }}</p>
           {% if entry.summary %}
           <p class="mb-0">{{ entry.summary }}</p>
           {% endif %}
+        </div>
+        <div class="col-3">
+          <p class="mb-0 text-end">{{ entry.date }}</p>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
   {% endif %}
+
 
     
     {% if site.data.bio.work %}
