@@ -65,9 +65,9 @@ body.dark-mode .navbar {
 /* Override color palette for dark mode */
 body.dark-mode {
   --bs-font-sans-serif: "Ubuntu Mono", sans-serif; /* NOT REALLY SANS SERIF*/
-  --bs-link-color: #D4AF37;
-  --tf-pill-bg: #508991;           /* Darker gray */
-  --tf-icon-fill: var(--bs-white); /* Darker gray */
+  --bs-link-color: #D4AF37;        /* Gold */
+  --tf-pill-bg: #6c71c4;           /* Dark Purple */
+  --tf-icon-fill: var(--bs-white); /* White */
   --tf-page-bg-color: #040015;     /* Darkest gray */
   --tf-footer-bg-color: #262736;   /* Medium dark gray */
   --tf-projects-bg-color: #262736; /* Medium dark gray */
@@ -76,15 +76,15 @@ body.dark-mode {
 
 /* Styles for the header in dark mode */
 .dark-mode #header {
-  background-color: #333333; /* Dark mode background color */
-  color: #076db3; /* Dark mode text color */
+  background-color: #100C08; /* Dark mode background color */
+  color: #B9D9EB; /* Dark mode text color */
   font-family: "Ubuntu Mono", sans-serif;
 }
 
 /* Customize other styles as needed */
 .dark-mode #header .navbar-brand,
 .dark-mode #header .nav-link {
-  color: #076db3; /* Dark mode text color for brand and links */
+  color: #B9D9EB; /* Dark mode text color for brand and links */
   font-family: "Ubuntu Mono", sans-serif;
 }
 
