@@ -49,6 +49,7 @@ layout: home
     background-color: lightgreen;
   }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0"></script> 
 </head>
 <body>
 <div class="container" style="225px; margin-bottom: 225px; margin-top: 25px;">
@@ -157,11 +158,21 @@ layout: home
 
     if (foundGroups.length === correctAnswers.length) {
       alert("You've successfully formed all groups!");
+      triggerConfetti();
     }
 
     selectedWords = [];  // Reset for next attempt
     document.querySelectorAll('.selected').forEach(e => e.classList.remove('selected'));
   }
+
+  function triggerConfetti() {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+  
 
   function displayCorrectGroup(group) {
     const correctArea = document.getElementById('correct-area');
