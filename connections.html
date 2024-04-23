@@ -51,7 +51,7 @@ layout: home
 </style>
 </head>
 <body>
-<div class="container" style="225px; margin-bottom: 225px;">
+<div class="container" style="225px; margin-bottom: 225px; margin-top: 25px;">
   <div class="row">
     <div id="box1" class="box"></div>
     <div id="box2" class="box"></div>
@@ -136,20 +136,29 @@ layout: home
     return true;
   }
 
-  function checkAnswers() {
+ function checkAnswers() {
     let correctFound = false;
     correctAnswers.forEach((group, index) => {
-      if (containsAll(selectedWords, group)) {
+      if (containsAll(selectedWords, group) && !foundGroups.includes(index)) {
         correctFound = true;
+        foundGroups.push(index);
         displayCorrectGroup(group);
         removeWordsFromBoxes(group);
-        alert('Congratulations! Your answers are correct!');
       }
     });
 
-    if (!correctFound) {
+    if (correctFound) {
+      alert('Congratulations! Your answers are correct!');
+    } else {
       alert('Sorry, your answers are incorrect. Please try again.');
     }
+
+    if (foundGroups.length === correctAnswers.length) {
+      alert("You've successfully formed all groups!");
+    }
+
+    selectedWords = [];  // Reset for next attempt
+    document.querySelectorAll('.selected').forEach(e => e.classList.remove('selected'));
   }
 
   function displayCorrectGroup(group) {
