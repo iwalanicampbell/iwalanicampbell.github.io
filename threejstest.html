@@ -13,51 +13,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-
-    // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-    scene.add(ambientLight);
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-    directionalLight.position.set(50, 50, 50);
-    scene.add(directionalLight);
-
-    // Computer Model
-    const bodyGeometry = new THREE.BoxGeometry(3, 0.5, 2);
-    const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0x333333 });
-    const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
-    scene.add(bodyMesh);
-
-    const screenGeometry = new THREE.BoxGeometry(2.8, 1.5, 0.1);
-    const screenMaterial = new THREE.MeshPhongMaterial({ color: 0x555555 });
-    const screenMesh = new THREE.Mesh(screenGeometry, screenMaterial);
-    screenMesh.position.set(0, 0.75, 0);
-    scene.add(screenMesh);
-
-    // Camera and Controls
-    camera.position.z = 5;
-    const controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        controls.update();
-        renderer.render(scene, camera);
-    }
-
-    animate();
-
-    window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
+    document.addEventListener('DOMContentLoaded', function () {
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        scene.add(ambientLight);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(0, 1, 1); // Modified light position
+        scene.add(directionalLight);
+
+        // Computer Model
+        const bodyGeometry = new THREE.BoxGeometry(3, 0.5, 2);
+        const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 }); // Changed to red for visibility
+        const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
+        bodyMesh.position.y = 0.25; // Slightly raise the base
+        scene.add(bodyMesh);
+
+        const screenGeometry = new THREE.BoxGeometry(2.8, 1.5, 0.1);
+        const screenMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 }); // Changed to green for visibility
+        const screenMesh = new THREE.Mesh(screenGeometry, screenMaterial);
+        screenMesh.position.set(0, 1.5, 0);
+        scene.add(screenMesh);
+
+        // Camera and Controls
+        camera.position.z = 5;
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
     });
-});
-    </script>
+</script>
 </body>
 </html>
