@@ -3,59 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 3D Computer</title>
-    <style>
-        body { margin: 0; }
-        canvas { display: block; }
-    </style>
-</head>
-<body>
-<script type="module">
-    import * as THREE from 'https://unpkg.com/three@0.128.0/build/three.module.js';
-    import { OrbitControls } from 'https://unpkg.com/three@0.128.0/examples/jsm/controls/OrbitControls.js';
+    <title>Three.js in HTML</title>
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three@0.137.0/build/three.module.js';
 
-    document.addEventListener('DOMContentLoaded', function () {
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
         const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        document.body.appendChild( renderer.domElement );
 
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-        scene.add(ambientLight);
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        directionalLight.position.set(0, 1, 1);
-        scene.add(directionalLight);
-
-        const bodyGeometry = new THREE.BoxGeometry(3, 0.5, 2);
-        const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 });
-        const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
-        bodyMesh.position.y = 0.25;
-        scene.add(bodyMesh);
-
-        const screenGeometry = new THREE.BoxGeometry(2.8, 1.5, 0.1);
-        const screenMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
-        const screenMesh = new THREE.Mesh(screenGeometry, screenMaterial);
-        screenMesh.position.set(0, 1.5, 0);
-        scene.add(screenMesh);
+        const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        const cube = new THREE.Mesh( geometry, material );
+        scene.add( cube );
 
         camera.position.z = 5;
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
 
         function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render(scene, camera);
-        }
-        animate();
+            requestAnimationFrame( animate );
 
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-    });
-</script>
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render( scene, camera );
+        }
+
+        animate();
+    </script>
+</head>
+<body>
 </body>
 </html>
