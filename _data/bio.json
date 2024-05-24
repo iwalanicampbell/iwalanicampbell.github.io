@@ -65,7 +65,7 @@
     {
       "company": "Department of Defense",
       "position": "Intern",
-      "website": "https://windward.hawaii.edu/services-for-students/tutoring/ka-piko/math-lab/",
+      "website": "https://www.dodciviliancareers.com/civiliancareers/internships",
       "startDate": "2021-08-01",
       "endDate": "Present",
       "summary": "Language Analyst Intern",
@@ -92,7 +92,7 @@
     {
       "company": "Department of Defense",
       "position": "Intern",
-      "website": "",
+      "website": "https://www.dodciviliancareers.com/civiliancareers/internships",
       "startDate": "2021-06-01",
       "endDate": "2021-08-01",
       "summary": "Published updated versions of Jupyter Notebooks that improve querying, retrieving, parsing, and presentation of sensitive data for analysts.",
