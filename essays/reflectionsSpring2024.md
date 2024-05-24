@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-image: img/reflectionsSpring2024.jpg"
+image: img/reflectionsSpring2024.png"
 title: Reflections on Spring 2024
 # All dates must be YYYY-MM-DD format!
 date: 2024-05-24
