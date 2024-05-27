@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/ninjacat/spr_player.png
+image: img/ninjacat/spr_helper.png
 title: "Ninja Cat"
 date: 2016
 published: true
