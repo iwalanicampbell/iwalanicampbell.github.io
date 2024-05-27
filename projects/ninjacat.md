@@ -20,7 +20,7 @@ The game is not fully finished yet but I hope to finish it by the time I graduat
 
 To see actual gameplay please take a look at the video below :D 
 <video width="640" height="480" controls>
-  <source src="https://raw.githubusercontent.com/your-username/your-repository/main/path-to-your-video.mp4" type="video/mp4">
+  <source src="https://github.com/iwalanicampbell/iwalanicampbell.github.io/blob/main/img/ninjacat/NinjacatTutorialVideo.mp4" type="video/mp4">
 </video>
 
 
