@@ -6,7 +6,7 @@
     "email": "iwalaniy@hawaii.edu",
     "phone": "",
     "website": "https://iwalanicampbell.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I am also studying for a minor in Chinese, I expect to graduate in Fall, 2025.",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii at Mānoa. I am also studying for a minor in Chinese, I expect to graduate in Fall, 2025.",
     "location": { "address": "", "postalCode": "", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "iwalanicampbell", "url": "http://github.com/iwalanicampbell" },
@@ -63,6 +63,19 @@
 ],
   "work": [
     {
+      "company": "Tatitlek Corporation",
+      "position": "National Security Innovation Network X-Force Fellow",
+      "website": "https://nsin.mil/x-force/",
+      "startDate": "2024-06-03",
+      "endDate": "2024-08-09",
+      "summary": "X-Force Fellow",
+      "highlights": [
+        "Solving real-world national security problems in collaboration with the U.S. Department of Defense",
+        "Processed and analyzed vast amounts of data to create comprehensive overviews",
+        "Prepared and delivered briefings to senior executives"
+      ]
+    },
+    {
       "company": "Department of Defense",
       "position": "Intern",
       "website": "https://www.dodciviliancareers.com/civiliancareers/internships",
@@ -72,7 +85,7 @@
       "highlights": [
         "Translated and summarized key political and military reports and documents from Chinese sources",
         "Synthesized large amounts of information from multiple sources to produce intelligence assessments and reports",
-        " Contributed to intelligence gathering and analysis efforts through language-based research and reporting"
+        "Contributed to intelligence gathering and analysis efforts through language-based research and reporting"
       ]
     },
     {
