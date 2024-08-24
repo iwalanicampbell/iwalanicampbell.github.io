@@ -14,4 +14,4 @@ summary: "Discord Bot/Application that sends users USAJOB listings based on sear
 
 It can be hard to even know what kind of jobs are out there as a student! A solution to this problem is creating a discord bot that sends users USAJOB listings when prompted or on a recurring basis. This is a project currently in progress there are still features to implement and other things to iron out. I also have to figure out how I want to deploy this to a server... 
 
- [Private Repo Link (Don't worry no API keys stored here)](https://github.com/iwalanicampbell/usajobs_discordbot).
+[Private Repo Link](https://github.com/iwalanicampbell/usajobs_discordbot)
